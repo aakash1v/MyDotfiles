@@ -1,0 +1,138 @@
+[general]
+# 🔁 Reload config automatically on changes
+live_config_reload = true
+
+# 🎨 Importing Catppuccin Mocha theme
+#import = ["/home/drew/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
+
+[env]
+# ✅ Ensures compatibility with tmux + nvim
+TERM = "xterm-256color"
+
+[window]
+# 🎛 Window padding and full opacity
+opacity = 1.0
+padding = { x = 1, y = 1 }
+decorations = "full"
+dynamic_padding = false
+
+[font]
+size = 12.0
+
+[font.normal]
+family = "FiraCode Nerd Font"
+style = "Regular"
+
+[colors.primary]
+background = "#1E1E2E"
+foreground = "#CDD6F4"
+bright_foreground = "#CDD6F4"
+dim_foreground = "#CDD6F4"
+
+[colors.normal]
+black = "#45475A"
+red = "#F38BA8"
+green = "#A6E3A1"
+yellow = "#F9E2AF"
+blue = "#89B4FA"
+magenta = "#F5C2E7"
+cyan = "#94E2D5"
+white = "#BAC2DE"
+
+[colors.bright]
+black = "#585B70"
+red = "#F38BA8"
+green = "#A6E3A1"
+yellow = "#F9E2AF"
+blue = "#89B4FA"
+magenta = "#F5C2E7"
+cyan = "#94E2D5"
+white = "#A6ADC8"
+
+[colors.dim]
+black = "#45475A"
+red = "#F38BA8"
+green = "#A6E3A1"
+yellow = "#F9E2AF"
+blue = "#89B4FA"
+magenta = "#F5C2E7"
+cyan = "#94E2D5"
+white = "#BAC2DE"
+
+[[colors.indexed_colors]]
+index = 16
+color = "#FAB387"
+
+[[colors.indexed_colors]]
+index = 17
+color = "#F5E0DC"
+
+[colors.cursor]
+cursor = "#F5E0DC"
+text = "#1E1E2E"
+
+[colors.selection]
+background = "#F5E0DC"
+text = "#1E1E2E"
+
+[colors.search.matches]
+background = "#A6ADC8"
+foreground = "#1E1E2E"
+
+[colors.search.focused_match]
+background = "#A6E3A1"
+foreground = "#1E1E2E"
+
+[colors.hints.start]
+background = "#F9E2AF"
+foreground = "#1E1E2E"
+
+[colors.hints.end]
+background = "#A6ADC8"
+foreground = "#1E1E2E"
+
+[colors.vi_mode_cursor]
+cursor = "#B4BEFE"
+text = "#1E1E2E"
+
+
+[debug]
+# ✅ Disables render timer to prevent slowdowns/input lag
+render_timer = false
+
+[mouse]
+# ✅ Hides mouse while typing (personal preference)
+hide_when_typing = true
+
+[selection]
+# ✅ Auto-copy selected text to clipboard (Linux friendly)
+save_to_clipboard = true
+
+[terminal]
+# Ensures consistent terminal behavior across tmux/nvim
+osc52 = "OnlyCopy"
+
+# Optional shell override (defaults to your login shell)
+# shell = { program = "/bin/bash" }
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Super"
+action = "SpawnNewInstance"
+
+[[keyboard.bindings]]
+# 🪟 F11 toggles fullscreen
+key = "F11"
+action = "ToggleFullscreen"
+
+[[keyboard.bindings]]
+# 🪟 Alt+Enter also toggles fullscreen
+key = "Return"
+mods = "Alt"
+action = "ToggleFullscreen"
+
+[[keyboard.bindings]]
+key = "w"
+mods = "Control"
+action = "Quit"
+
